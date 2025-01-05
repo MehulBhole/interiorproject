@@ -1,0 +1,30 @@
+.offer_container{
+    padding-top: 53px;
+    height: 572px;
+   background-color:  rgba(245, 245, 245, 1);
+}
+.offer_header{
+    font-size: 32px;
+    line-height: 32px;
+    font-family: fangsong;
+    font-weight: 400;
+    margin-left: 50px;
+}
+.cards-container{
+    margin-top: 29px;
+ margin-left: 53px;
+ margin-right: 53px;
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
+gap: 47px; /* Space between grid items */
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 1279px) {
+    .cards-container{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .offer_container{
+        height: 1400px ;
+    }
+}

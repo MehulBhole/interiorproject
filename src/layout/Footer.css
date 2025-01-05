@@ -1,0 +1,36 @@
+.footer-container{
+    height: 470px;
+    position: absolute;
+    background-color: rgba(132, 46, 102, 0.8);
+    width: 100%;
+   
+}
+.footer-title{
+    font-size: 26px;
+    line-height: 26px;
+    font-family: emoji;
+    font-weight: 700;
+    margin-top: 37px;
+    color: white;
+    text-align: center
+    
+}
+.footer-content{
+    margin: 37px auto;
+    font-size: 21px;
+    height: 280px;
+    width: 1080px;
+    text-align: center;
+    color: white;
+
+}
+@media screen and (min-width: 360px) and (max-width: 1279px) {
+    .footer-container{
+        height: 540px;
+    }
+    .footer-content{
+        width: 344px;
+        height: 384px;
+        font-size: 14px;
+    }
+}

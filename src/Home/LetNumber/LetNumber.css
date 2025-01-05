@@ -1,0 +1,59 @@
+.LetNumber_container{
+
+    height: 256px;
+    background-color: rgba(91, 165, 133, 1);
+    width: 100%;
+}
+
+.letnum-title{
+color: white;
+font-size: 32px;
+font-weight: 500;
+line-height: 32px;
+text-align: center;
+padding-top: 34px;
+
+}
+.subtitle{
+    height: 80px;
+    margin-top: 81px;
+    color: white;
+    display: flex;
+        justify-content: center;
+        gap: 200px;
+}
+.subtitle-text{
+    font-size: 22px;
+    line-height: 22px;
+    font-family: emoji;
+}
+.subtitle-subcount{
+    margin-top: 10px;
+  font-size:22px;
+  line-height: 22px;
+  font-family: emoji;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1279px) {
+    .LetNumber_container{
+height:196px;
+    }
+    .letnum-title{
+        font-size: clamp(1.25rem, 0.9677rem + 1.2903vw, 2rem);
+        padding-top: 30px;
+
+    }
+    .subtitle {
+        margin-top: 42px;
+        gap: 50px;
+    }
+    .subtitle-text{
+        font-size: 14px;
+    }
+    .subtitle-subcount{
+       
+      font-size:14px;
+    
+    }
+    
+}

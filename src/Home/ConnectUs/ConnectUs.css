@@ -1,0 +1,145 @@
+.connectUs-container{
+    height: 250px;
+    text-align: center;
+
+}
+.title-connectus{
+    font-size: 48px;
+    line-height: 48px;
+    font-family: fangsong;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.56);
+   padding-top: 34px;
+    margin-bottom: 24px;
+}
+
+.subtitle-connectus{
+    font-size: 24px;
+    line-height: 24px;
+    font-family: fangsong;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.50);
+    margin-bottom: 43px;
+}
+.callWhatsapp-btn{
+display: flex;
+justify-content: center;
+gap: 30px;
+}
+.callwhat-common-btn{
+
+    height: 50px;
+    width: 230px;
+    border-radius: 40px;
+    background-color: rgba(37, 23, 130, 1);
+    color: white;
+    font-size: 20px;
+    font-family: emoji;
+ 
+}
+.callwhat-common-btn:hover{
+    background-color: aliceblue;
+    color: rgba(37, 23, 130, 1);
+}
+
+
+.text-common{
+    color: white;
+    font-size: 20px;
+    font-family: emoji;
+   
+}
+.text-common:hover{
+    color: rgba(37, 23, 130, 1);
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.popup-content h3 {
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.copy-btn,
+.close-btn {
+    background-color: rgba(37, 23, 130, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.copy-btn:hover,
+.close-btn:hover {
+    background-color: aliceblue;
+    color: rgba(37, 23, 130, 1);
+}
+.copied-message {
+    position: fixed; /* Keeps it visible while scrolling */
+    top: 20%; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center in both directions */
+    background-color: rgba(0, 128, 0, 0.9); /* A green background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Space around the text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Readable font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+    animation: fadeOut 2s forwards; /* Fades out after appearing */
+    z-index: 1000; /* Ensures it appears above other elements */
+}
+
+/* Add fade-out animation */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 1279px) {
+    .title-connectus
+    {
+        padding-top: 30px;
+        margin-bottom: 4px;
+        font-size: clamp(1.625rem, 1.1075rem + 2.3656vw, 3rem);
+    }
+    .subtitle-connectus{
+        font-size: clamp(0.75rem, 0.4677rem + 1.2903vw, 1.5rem);
+        margin-bottom: 15px;
+    }
+    .callwhat-common-btn{
+    width: clamp(8.75rem, 6.6331rem + 9.6774vw, 14.375rem);
+    }
+    .connectUs-container{
+        height: 230px;
+    }
+}

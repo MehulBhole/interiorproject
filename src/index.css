@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* For Modern Browsers */
+body {
+  overflow: hidden; /* Disable default scrollbars */
+  overflow-y: scroll; /* Enables vertical scrolling but hides the scrollbar */
+}
+
+/* For Webkit Browsers (Chrome, Safari, etc.) */
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in webkit-based browsers */
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
