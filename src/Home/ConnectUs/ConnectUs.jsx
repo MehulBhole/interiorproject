@@ -35,10 +35,11 @@ const ConnectUs = ({connectData = contactUsData }) => {
                </button>
                <button className="callwhat-common-btn"
                onClick={() => {
-                window.open("https://wa.me/919112285408", "_blank");
+                window.open("https://wa.me/919112285408", "_blank"); 
             }}>
                
                <div >{contactUsData.whatsapp}</div>
+               
                </button>
          </div>
          {showPopup && (
