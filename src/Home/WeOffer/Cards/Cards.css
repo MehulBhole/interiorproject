@@ -25,10 +25,16 @@
     margin: 24px 0; /* Space between list items */
 }
 
-@media screen and (min-width: 360px) and (max-width: 1279px) {
+@media screen and (min-width: 480px) and (max-width: 1279px) {
 
     .card{
         width: clamp(17.625rem, 15.7903rem + 8.3871vw, 22.5rem);
         margin: 0 auto;
+    }
+}
+@media screen and (max-width: 479px)  {
+    .card{
+        width: 266px;
+      
     }
 }
